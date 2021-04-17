@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react'
+import Measurements from './Measurements'
+import From from './Form'
 
 function App() {
+  const [measurements1, setMeasurements1] = useState([])
+  const [measurements2, setMeasurements2] = useState([])
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <section className="forms">
+        <From setMeasurements={setMeasurements1} className="form1"/>
+        <From setMeasurements={setMeasurements2} className="form2"/>
+      </section>
+      <Measurements measurements1={measurements1} measurements2={measurements2}/>
+    </main>
   );
 }
 

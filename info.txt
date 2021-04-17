@@ -1,0 +1,37 @@
+Air Quality Assessment Tool
+
+Create a simple Air Quality Assessment Tool using  react with semantic ui (https://react.semantic-ui.com/) that utilizes Open AQ Platform API https://docs.openaq.org/
+
+It will have the ability to compare the Air Quality of two cities.
+
+ 
+
+The tool must: 
+
+Allow the user to input two cities
+
+  Display the air quality of the corresponding cities, allowing the user to compare the two
+
+  Gracefully handle any API or user errors
+
+  Tool should be easily used by the general public
+
+ 
+
+Please send us the GitHub link to review the code.
+
+Requesting completion by 4/16/21.
+
+v2/measurements
+
+v2/cities
+v2/countries
+v2/countries/{country_id}
+v2/locations
+
+
+PM2.5, O₃, SO₂
+
+line chart, scatter plot
+
+Recharts
